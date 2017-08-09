@@ -1,0 +1,11 @@
+module.exports = {
+	connectors: {
+		'appc.weather.connector': {
+			// TODO: Create a default config file in here; this will guide users of your connector.
+			city: 'Sofia',
+			units: 'metric',
+			appid: 'fed306720840c6a287cdb2eedac37ed7',
+			url: 'http://api.openweathermap.org/data/2.5/forecast/daily?cnt=5',
+		}
+	}
+};

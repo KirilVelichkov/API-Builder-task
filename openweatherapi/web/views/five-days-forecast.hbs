@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <title>Powered by Axway API Builder</title>
+
+</head>
+
+<div style="margin:0 30%">
+    <h1> Five days forecast for {{city.name}} city</h1>
+</div>
+<body>
+    <table class="table table-bordered table-inverse">
+        <thead>
+            <tr>
+                <th>
+                    Day
+                </th>
+                <th>
+                    Current temperature
+                </th>
+                <th>
+                    Daily minimum temperature
+                </th>
+                <th>
+                    Daily maximum temperature
+                </th>
+                <th>
+                    Weather
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each list}}
+            <tr>
+                <td>
+                    {{dt}}
+                </td>
+                <td>
+                    {{temp.day}} &#8451;
+                </td>
+                <td>
+                    {{temp.min}} &#8451;
+                </td>
+                <td>
+                    {{temp.max}} &#8451;
+                </td>
+                <td>
+                    {{#each weather}} {{description}} {{/each}}
+                </td>
+            </tr>
+            {{/each}}
+
+        </tbody>
+    </table>
+</body>
+
+</html>
