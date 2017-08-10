@@ -1,2 +1,4 @@
-node_modules
+node_modules/async
+node_modules/lodash
+node_modules/pkginfo
 logs

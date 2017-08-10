@@ -8,7 +8,6 @@ var ForecastRoute = Arrow.Router.extend({
 	action: function (req, resp, next) {
 		req.server.getAPI('api/openweathermap', 'GET')
 			.execute({}, (err, result) => {
-				console.log(1);
 				
 				if (err) {
 					next(err);

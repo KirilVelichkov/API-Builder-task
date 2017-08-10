@@ -22,7 +22,7 @@ var Forecast = Arrow.createModel('five-days-forecast', {
             country: { type: String }
         }
     },
-    connector: 'appc.arrowdb'
+    connector: 'appc.weather'
 });
 
 module.exports = Forecast;

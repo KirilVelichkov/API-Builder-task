@@ -1,13 +1,10 @@
 module.exports = {
-    "connectors": {
-        "appc.weather": {
-            "enabled": true,
-            "connector": "appc.weather",
-            "environment": "development",
-            "key": "AbRrNM53iLU1h6corF7ioxiy1DEN8F1K",
-            "baseurl": "https://api.cloud.appcelerator.com",
-            "username": "appc_app_user_dev",
-            "password": "uOT2vYlBB8OtHEp2pj"
-        }
-    }
+    connectors: {
+		'appc.weather': {
+			city: 'Sofia',
+			units: 'metric',
+			appid: 'fed306720840c6a287cdb2eedac37ed7',
+			url: 'http://api.openweathermap.org/data/2.5/forecast/daily?cnt=5',
+		}
+	}
 };
